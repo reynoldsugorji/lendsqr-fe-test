@@ -1,0 +1,22 @@
+@mixin flexbox($justify-content) {
+    display: flex;
+    flex-direction: column;
+    justify-content: $justify-content;
+  }
+
+ // _layout.scss
+
+$breakpoints: (
+  sm: 480px,
+  md: 768px,
+  lg: 992px,
+  xl: 1280px,
+  "2xl": 1536px,
+);
+
+// Define a mixin for creating media queries using Chakra UI's breakpoints
+@mixin respond-to($breakpoint) {
+  @media (max-width: map-get($breakpoints, $breakpoint)) {
+    @content;
+  }
+}

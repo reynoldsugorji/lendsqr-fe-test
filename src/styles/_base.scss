@@ -1,0 +1,42 @@
+@import "utils";
+h1 {
+    font-size: 2.5rem;
+    line-height: 3.438rem;
+    font-weight: 700;
+    color: $primary-color;
+    font-family: $primary-font-family;
+
+    @include respond-to(sm) {
+        font-size: 1.875rem;
+    }
+}
+h3 {
+    font-size: 1.875rem;
+    line-height: 2.813rem;
+    font-weight: 700;
+    color: $primary-color;
+    font-family: $primary-font-family;
+}
+h4 {
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.688rem;
+    color: $secondary-color;
+    font-family: $primary-font-family;
+
+    @include respond-to(sm) {
+        font-size: 0.875rem;
+    }
+}
+
+input {
+    background: #FFFFFF;
+    border: 2px solid rgba(84, 95, 125, 0.15);
+    border-radius: 5px;
+    height: 50px;
+}
+button {
+    background: #39CDCC;
+    border-radius: 8px;
+    border:0;
+}

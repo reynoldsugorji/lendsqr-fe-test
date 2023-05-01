@@ -1,0 +1,41 @@
+@import "../../styles/utils";
+
+.login {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+
+    &__image {
+        width: 50%;
+        padding: 2em;
+        @include flexbox(center);
+
+        @include respond-to(sm) {
+            display: none;
+        }       
+    }
+    &__image__logo {
+        display: flex;
+        align-items: center;
+        position:absolute;
+        top:10%;
+    }
+    &__form {
+        width: 50%;
+        padding: 5em 7em 5em 5em ;
+        box-shadow: 0px 15px 90px rgba(0, 0, 0, 0.03);
+        background-color: #ffffff;
+        @include flexbox(center);
+        @include respond-to(lg) {
+           padding: 2em;
+           width: 100%;
+        }
+        
+    }
+}
+
+.logo {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
